@@ -33,7 +33,7 @@ public interface AccountController {
     public ResponseEntity<List<AccountOut>> findAll();
 
     @GetMapping("/accounts/{id}")
-    public ResponseEntity<Void> findById(
+    public ResponseEntity<AccountOut> findById(
         @PathVariable String id
     );
     
